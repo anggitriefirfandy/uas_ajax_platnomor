@@ -6,7 +6,7 @@ $data = json_decode($raw);
 
 // echo json_encode($data->nomor);
 
-$sql = "delete from data where data='" . $data->data . "'";
+$sql = "delete from data where nomor='" . $data->nomor . "'";
 $result = pg_query($sql);
 $row = pg_affected_rows($result);
 
